@@ -6,7 +6,7 @@ With this plugin, you can minify you js's and css's via PHP providing input and 
 This plugin uses an online service provided by Andy Chilton, http://chilts.org/
 
 ## Download
-* [Master branch](https://github.com/promatik/php-js-and-css-minifier/archive/master.zip)
+* [Master branch](https://github.com/promatik/php-js-css-minifier/archive/master.zip)
 
 ## Setup
 * How to setup the plugin:
