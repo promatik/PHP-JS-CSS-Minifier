@@ -20,7 +20,7 @@ $js = array(
 );
 $css = array(
 	"css/application.css"	=> "css/application.min.css",
-	"css/story.css"			=> "css/story.min.css"
+	"css/main.css"			=> "css/main.min.css"
 );
 
 minifyJS($js);
