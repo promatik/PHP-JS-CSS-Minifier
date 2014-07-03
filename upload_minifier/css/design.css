@@ -1,0 +1,66 @@
+/* CSS Document */
+
+* {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+#upload{
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	margin-top: 200px;
+}
+
+h1 {
+	font-size: 32px;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+	line-height: 60px;
+}
+
+label {
+	color: #454545;
+	font-size: 18px;
+	text-align: left;
+}
+
+input[type="file"] {
+	height: 30px;
+	padding: 5px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+input[type="submit"] {
+	width: 100px;
+	height: 40px;
+	background-color: #b9b9b9;
+	border: 1px solid #b9b9b9;
+	color: #fff;
+	font-size: 18px;
+	margin-left: 230px;
+	margin-top: 25px;
+}
+
+#validation{
+	margin-top: 20px;
+}
+
+.error{
+	color: red;
+	font-weight: bold;
+}
+
+.success{
+	color: green;
+	font-weight: bold;
+}

@@ -2,7 +2,7 @@ PHP, JS and CSS Minifier
 ====================
 
 ## Description
-With this plugin, you can minify you js's and css's via PHP providing input and output path's.
+This is a test to add an upload feature for minifying multiple files.
 This plugin uses an online service provided by Andy Chilton, http://chilts.org/
 
 ## Download

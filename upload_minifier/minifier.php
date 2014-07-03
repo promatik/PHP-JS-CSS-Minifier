@@ -16,20 +16,24 @@
 	 */
 	
 	function minifyJS($arr){
-		minify($arr, 'http://javascript-minifier.com/raw');
+		return minify($arr, 'http://javascript-minifier.com/raw', 'upload/js/');
 	}
 	
 	function minifyCSS($arr){
-		minify($arr, 'http://cssminifier.com/raw');
+		return minify($arr, 'http://cssminifier.com/raw', 'upload/css/');
 	}
 	
-	function minify($arr, $url) {
+	function minify($arr, $url, $path){
+		$treatment = '';
 		foreach ($arr as $key => $value) {
+			$uploaded_file = $path.$key;
 			$handler = fopen($value, 'w') or die("File <a href='" . $value . "'>" . $value . "</a> error!<br />");
-			fwrite($handler, getMinified($url, file_get_contents($key)));
+			fwrite($handler, getMinified($url, file_get_contents($uploaded_file)));
 			fclose($handler);
-			echo "File <a href='" . $value . "'>" . $value . "</a> done!<br />";
+			unlink($uploaded_file);    // delete uploaded files
+			$treatment .= "File <a href='" . $value . "'>" . $value . "</a> done!<br />";
 		}
+		return $treatment;
 	}
 	
 	function getMinified($url, $content) {
