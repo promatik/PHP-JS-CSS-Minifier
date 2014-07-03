@@ -9,27 +9,17 @@ This plugin uses an online service provided by Andy Chilton, http://chilts.org/
 * [Master branch](https://github.com/promatik/php-js-css-minifier/archive/master.zip)
 
 ## Setup
-* How to setup the plugin:
-
-```php
-include_once("minifier.php");
-
-$js = array(
-	"js/application.js" 	=> "js/application.min.js",
-	"js/main.js" 			=> "js/main.min.js"
-);
-$css = array(
-	"css/application.css"	=> "css/application.min.css",
-	"css/main.css"			=> "css/main.min.css"
-);
-
-minifyJS($js);
-minifyCSS($css);
-```
+* Install the upload_minifier directory on your server
+* Go to the index file
+* Upload one or multiple files
+* Get your min files in a specific directory
 
 ## Features
 * **Instantly compress all your JS's and CSS's**  
-  This allows you to add js and css files to a list, that you can minify at any time.
+*  This allows you to upload js and css files and minify those files at any time.
+
+## Demo
+Try the <a href="www.unjourunemarque.fr/upload_minifier/">Demo</a> to see the result.
 
 ## Requirements
 * PHP Webserver
