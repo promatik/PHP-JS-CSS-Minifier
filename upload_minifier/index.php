@@ -53,7 +53,11 @@
 			{
 				$explode = explode('.', $file_name[$i]);
 				// get the name without extension
-				$name_no_ext = $explode[0];	
+				$name_no_ext = '';
+				for ($j=0; $j < count($explode)-1; $j++) { 
+					if($j == (count($explode)-2)) $name_no_ext .= $explode[$j];
+					else $name_no_ext .= $explode[$j].'.';
+				}
 
 				moveFile($tmp_file_name[$i], $path.$file_name[$i]);
 				// add the file to the array files
