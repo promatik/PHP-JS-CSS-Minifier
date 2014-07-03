@@ -19,7 +19,7 @@ This plugin uses an online service provided by Andy Chilton, http://chilts.org/
 *  This allows you to upload js and css files and minify those files at any time.
 
 ## Demo
-Try the <a href="http://www.unjourunemarque.fr/upload_minifier/">Demo</a> to see the result.
+Try the <a href="http://www.unjourunemarque.fr/upload_minifier/" target="_blank">Demo</a> to see the result.
 
 ## Requirements
 * PHP Webserver
