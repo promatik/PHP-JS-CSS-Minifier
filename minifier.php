@@ -16,11 +16,11 @@
 	 */
 	
 	function minifyJS($arr){
-		minify($arr, 'http://javascript-minifier.com/raw');
+		minify($arr, 'https://javascript-minifier.com/raw');
 	}
 	
 	function minifyCSS($arr){
-		minify($arr, 'http://cssminifier.com/raw');
+		minify($arr, 'https://cssminifier.com/raw');
 	}
 	
 	function minify($arr, $url) {
