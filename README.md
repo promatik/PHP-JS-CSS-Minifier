@@ -15,12 +15,12 @@ This plugin uses an online service provided by Andy Chilton, http://chilts.org/
 include_once 'minifier.php';
 
 $js = [
-	'js/application.js' 	=> 'js/application.min.js',
-	'js/main.js' 			=> 'js/main.min.js',
+    'js/main.js' => 'js/main.min.js',
+    // ...
 ];
 $css = [
-	'css/application.css'	=> 'css/application.min.css',
-	'css/main.css'			=> 'css/main.min.css',
+    'css/main.css'=> 'css/main.min.css',
+    // ...
 ];
 
 minifyJS($js);
