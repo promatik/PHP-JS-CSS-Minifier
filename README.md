@@ -12,16 +12,16 @@ This plugin uses an online service provided by Andy Chilton, http://chilts.org/
 * How to setup the plugin:
 
 ```php
-include_once("minifier.php");
+include_once 'minifier.php';
 
-$js = array(
-	"js/application.js" 	=> "js/application.min.js",
-	"js/main.js" 			=> "js/main.min.js"
-);
-$css = array(
-	"css/application.css"	=> "css/application.min.css",
-	"css/main.css"			=> "css/main.min.css"
-);
+$js = [
+	'js/application.js' 	=> 'js/application.min.js',
+	'js/main.js' 			=> 'js/main.min.js',
+];
+$css = [
+	'css/application.css'	=> 'css/application.min.css',
+	'css/main.css'			=> 'css/main.min.css',
+];
 
 minifyJS($js);
 minifyCSS($css);
